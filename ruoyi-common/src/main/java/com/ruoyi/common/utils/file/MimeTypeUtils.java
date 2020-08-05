@@ -2,7 +2,7 @@ package com.ruoyi.common.utils.file;
 
 /**
  * 媒体类型工具类
- * 
+ *
  * @author ruoyi
  */
 public class MimeTypeUtils
@@ -16,7 +16,7 @@ public class MimeTypeUtils
     public static final String IMAGE_BMP = "image/bmp";
 
     public static final String IMAGE_GIF = "image/gif";
-    
+
     public static final String[] IMAGE_EXTENSION = { "bmp", "gif", "jpg", "jpeg", "png" };
 
     public static final String[] FLASH_EXTENSION = { "swf", "flv" };
@@ -32,7 +32,9 @@ public class MimeTypeUtils
             // 压缩文件
             "rar", "zip", "gz", "bz2",
             // pdf
-            "pdf" };
+            "pdf",
+            // BPMN (zip 格式在上面)
+            "bpmn", "bar"};
 
     public static String getExtension(String prefix)
     {

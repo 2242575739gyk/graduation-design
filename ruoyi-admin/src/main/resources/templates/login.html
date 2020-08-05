@@ -29,14 +29,23 @@
                         <h1><img alt="[ 若依 ]" src="../static/ruoyi.png" th:src="@{/ruoyi.png}"></h1>
                     </div>
                     <div class="m-b"></div>
-                    <h4>欢迎使用 <strong>若依 后台管理系统</strong></h4>
+                    <div class="m-b"></div>
+                    <h4>欢迎使用 <strong>闲鹿工作流管理系统</strong></h4>
                     <ul class="m-b">
-                        <li><i class="fa fa-arrow-circle-o-right m-r-xs"></i> SpringBoot</li>
-                        <li><i class="fa fa-arrow-circle-o-right m-r-xs"></i> Mybatis</li>
-                        <li><i class="fa fa-arrow-circle-o-right m-r-xs"></i> Shiro</li>
-                        <li><i class="fa fa-arrow-circle-o-right m-r-xs"></i> Thymeleaf</li>
-                        <li><i class="fa fa-arrow-circle-o-right m-r-xs"></i> Bootstrap</li>
+                        <li><i class="fa fa-arrow-circle-o-right m-r-xs"></i> Activiti 6.x</li>
+                        <li><i class="fa fa-arrow-circle-o-right m-r-xs"></i> SpringBoot 2.x</li>
+                        <li><i class="fa fa-arrow-circle-o-right m-r-xs"></i> Thymeleaf 3.x</li>
+                        <li><i class="fa fa-arrow-circle-o-right m-r-xs"></i> Bootstrap 3.x</li>
                     </ul>
+                    <div style="color: black; font-size: 18px;">
+                        <p>测试账号 (密码均为 123456)：</p>
+                        <ol>
+                            <li>普通员工：chengxy 程序猿</li>
+                            <li>部门领导：axianlu 一只闲鹿</li>
+                            <li>人事：    rensm  人事喵</li>
+                        </ol>
+                        <p>p.s. 流程管理请使用 admin 账号维护</p>
+                    </div>
                     <strong th:if="${@config.getKey('sys.account.registerUser')}">还没有账号？ <a th:href="@{/register}">立即注册&raquo;</a></strong>
                 </div>
             </div>
